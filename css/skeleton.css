@@ -425,6 +425,30 @@ there.
 /* My Touch
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+#navbar {
+  background-color: white;
+  overflow: hidden;
+  z-index: 100;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #222;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
 .box {
   border-radius: 5px;
   padding: 1rem;
