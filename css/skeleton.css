@@ -416,3 +416,17 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+/* My Touch
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.box {
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+#biography {
+  background-color: rgba(255, 0, 255, 15%);
+  border: solid rgba(255, 50, 255, 15%) 0.2rem;
+}
