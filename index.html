@@ -33,12 +33,14 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <nav id="navbar"><a href="#biography">biography</a></nav>
-  </div>
-  <div class="container">
-    <!-- header -->
-    <!-- possible nav with  -->
     <header class="one.column title" style="margin-top: 25%">
+      <!-- possible nav with  -->
+      <div id="navbar">
+        <a href="#biography">bio</a>
+        <a href="#work">work</a>
+        <a href="#ping">ping</a>
+        <button id="onOFf" class="button-primary" value="light">Dark</button>
+      </div>
       <h1>KirkStarter</h1>
       <h5 style="font-family: 'Libre Franklin', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;">The journey to becoming a solid coding journeyman starts here.</h5>
     </header>
@@ -72,9 +74,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
-<script>
-  window.onscroll = function() {myFunction()};
+<script defer>
+  window.onload = function() {myFunction()};
   
+  // nav bar
   var navbar = document.getElementById("navbar");
   var sticky = navbar.offsetTop;
   
@@ -83,6 +86,20 @@
       navbar.classList.add("sticky")
     } else {
       navbar.classList.remove("sticky");
+    }
+  }
+
+  // night mode
+  var onOffBtn = document.querySelector("#onOff");
+  var viewState = document.querySelector()
+  onOffBtn.addEventListener("onclick", viewChange);
+
+  function viewChange () {
+    if (onOffBtn.value === "light") {
+      onOffBtn.value === "dark";
+    }
+    else {
+      onOffBtn.value === "light";
     }
   }
   </script>
