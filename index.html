@@ -39,7 +39,7 @@
         <a href="#biography">bio</a>
         <a href="#work">work</a>
         <a href="#ping">ping</a>
-        <button id="onOFf" class="button-primary" value="light">Dark</button>
+        <button id="onOff" class="button-primary" value="light">dark</button>
       </div>
       <h1>KirkStarter</h1>
       <h5 style="font-family: 'Libre Franklin', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;">The journey to becoming a solid coding journeyman starts here.</h5>
@@ -49,7 +49,7 @@
       <div id="biography" class="one.column box">
         <img class="jamey" src="images/j_kirk.jpeg">
         <h4>About</h4>
-        <p>Aspiring to be all things for all needs. In other words, I'm aiming to become a full stack tallent with a strong backend background. At the moment, I can be found teaching English in South Korea to university students, but I'm looking forward to my next step.</p>
+        <p>Aspiring to be all things for all needs. In other words, I'm aiming to become a full stack tallent with a strong backend background. At the moment, I can be found teaching English in South Korea to university students while I'm looking forward to my next step.</p>
       </div>
     </div>
     <div class="row">
@@ -91,15 +91,24 @@
 
   // night mode
   var onOffBtn = document.querySelector("#onOff");
-  var viewState = document.querySelector()
-  onOffBtn.addEventListener("onclick", viewChange);
+  onOffBtn.style.cursor = "zoom-in";
 
-  function viewChange () {
-    if (onOffBtn.value === "light") {
-      onOffBtn.value === "dark";
+  var test = document.getElementsByTagName("p");
+  test[0].addEventListener("mouseover", changeColor);
+
+  function changeColor(e) {
+    e.target.style.color = "blue";
+  }
+  //var viewState = document.querySelector()
+  onOffBtn.addEventListener("click", changeState); 
+  
+  function changeState (e) {
+    var state = e.target.value;
+    if (state == "light") {
+      e.target.value = "dark";
     }
     else {
-      onOffBtn.value === "light";
+      e.target.value = "light";
     }
   }
   </script>
