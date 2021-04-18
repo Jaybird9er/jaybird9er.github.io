@@ -474,6 +474,7 @@ there.
 .box {
   border-radius: 5px;
   padding: 1rem;
+  margin-bottom: 20px;
 }
 
 #biography {

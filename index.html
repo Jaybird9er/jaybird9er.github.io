@@ -27,6 +27,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="dark_navbar.js" defer></script>
+  
 </head>
 <body>
 
@@ -48,68 +52,26 @@
     <div class="row">
       <div id="biography" class="one.column box">
         <img class="jamey" src="images/j_kirk.jpeg">
-        <h4>About</h4>
+        <h4>bio</h4>
         <p>Aspiring to be all things for all needs. In other words, I'm aiming to become a full stack tallent with a strong backend background. At the moment, I can be found teaching English in South Korea to university students while I'm looking forward to my next step.</p>
       </div>
     </div>
-    <div class="row">
-      <div  class="one.column box">
-        <img class="jamey" src="images/j_kirk.jpeg">
-        <h4>About</h4>
-        <p>Aspiring to be all things for all needs. In other words, I'm aiming to become a full stack tallent with a strong backend background. At the moment, I can be found teaching English in South Korea to university students, but I'm looking forward to my next step.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="one.column box">
-        <img class="jamey" src="images/j_kirk.jpeg">
-        <h4>About</h4>
-        <p>Aspiring to be all things for all needs. In other words, I'm aiming to become a full stack tallent with a strong backend background. At the moment, I can be found teaching English in South Korea to university students, but I'm looking forward to my next step.</p>
-      </div>
-    </div>
-    
     <!-- portfolio w/ links to code projects -->
+    <div class="row">
+      <div id="work" class="one.column box">
+        <img class="jamey" src="images/j_kirk.jpeg">
+        <h4>work</h4>
+        <h5>project 1</h5>
+        <p>Aspiring to be all things for all needs. In other words, I'm aiming to become a full stack tallent with a strong backend background. At the moment, I can be found teaching English in South Korea to university students, but I'm looking forward to my next step.</p>
+        <br>
+        <img class="jamey" src="images/j_kirk.jpeg">
+        <h5>project 2</h5>
+        <p>Aspiring to be all things for all needs. In other words, I'm aiming to become a full stack tallent with a strong backend background. At the moment, I can be found teaching English in South Korea to university students, but I'm looking forward to my next step.</p>
+      </div>
+    </div>    
   </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-
-<script defer>
-  window.onload = function() {myFunction()};
-  
-  // nav bar
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-
-  // night mode
-  var onOffBtn = document.querySelector("#onOff");
-  onOffBtn.style.cursor = "zoom-in";
-
-  var test = document.getElementsByTagName("p");
-  test[0].addEventListener("mouseover", changeColor);
-
-  function changeColor(e) {
-    e.target.style.color = "blue";
-  }
-  //var viewState = document.querySelector()
-  onOffBtn.addEventListener("click", changeState); 
-  
-  function changeState (e) {
-    var state = e.target.value;
-    if (state == "light") {
-      e.target.value = "dark";
-    }
-    else {
-      e.target.value = "light";
-    }
-  }
-  </script>
 </html>
