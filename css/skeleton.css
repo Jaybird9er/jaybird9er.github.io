@@ -168,9 +168,11 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  text-decoration: none;
+  color:rgb(255, 100, 50); }
 a:hover {
-  color: #0FA0CE; }
+  text-decoration: underline;
+  color:rgb(255, 50, 50); }
 
 
 /* Buttons
@@ -314,7 +316,7 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 0rem; }
 
 
 /* Code
@@ -482,7 +484,7 @@ there.
   border: solid rgba(50, 100, 255, 15%) 0.2rem;
 }
 
-.jamey {
+.img {
   display: flex;
   float: left;
   position: relative;
@@ -493,4 +495,48 @@ there.
   margin: 0 10px 10px 0;
   border-radius: 50%;
   shape-outside: circle();
+}
+
+#work {
+  background-color: rgba(50, 255, 50, 15%);
+  border: solid rgba(50, 255, 100, 15%) 0.2rem;
+}
+
+#ping {
+  background-color: rgba(255, 50, 50, 15%);
+  border: solid rgba(255, 100, 50, 15%) 0.2rem;
+}
+
+a.project {
+  text-decoration: none;
+  color:rgb(50, 200, 100); }
+a.project:hover {
+  text-decoration: underline;
+  color:rgb(50, 200, 50); }
+
+.github {
+  background-color: white;
+  shape-outside: circle();
+}
+
+strong {
+  font-weight:900;
+}
+
+/* having no luck trying to center images on resize */
+.ping, .github {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin: 0 10px 10px 0;
+}
+
+@media (min-width: 400px) {
+  .ping, .github {
+    display: flex;
+    float: left;
+  }
 }
