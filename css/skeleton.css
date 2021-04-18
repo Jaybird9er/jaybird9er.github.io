@@ -534,9 +534,9 @@ strong {
   margin: 0 10px 10px 0;
 }
 
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
   .ping, .github {
     display: flex;
     float: left;
   }
-}
+} */
