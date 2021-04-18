@@ -436,12 +436,7 @@ there.
 /* My Touch
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* @media (max-width: 399px) {
-  .sticky {
-    width: 90%;
-  }
-} */
-
+/* nav elements */
 #navbar {
   background-color: white;
   overflow: hidden;
@@ -469,10 +464,12 @@ there.
   width: 90%;
 }
 
+/* title elements */
 .title {
   text-align: center;
 }
 
+/* primary body elements */
 .box {
   border-radius: 5px;
   padding: 1rem;
@@ -507,20 +504,22 @@ there.
   border: solid rgba(255, 100, 50, 15%) 0.2rem;
 }
 
+/* augment the link styles for the work section */
 a.project {
   text-decoration: none;
   color:rgb(50, 200, 100); }
 a.project:hover {
   text-decoration: underline;
   color:rgb(50, 200, 50); }
+  
+/* adds bold weight to some keywords in the work section */
+strong {
+  font-weight:900;
+}
 
 .github {
   background-color: white;
   shape-outside: circle();
-}
-
-strong {
-  font-weight:900;
 }
 
 /* having no luck trying to center images on resize */
